@@ -1,10 +1,12 @@
+<!-- home.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 <head>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>Weather</title>
 </head>
 <body>
-    <h1>Home Page</h1>
+<h1>Weather in <span th:text="${city}"></span></h1>
+<p>Temperature: <span th:text="${temperature}"></span>°C</p>
+<p>Local Time: <span th:text="${time}"></span></p>
 </body>
 </html>
