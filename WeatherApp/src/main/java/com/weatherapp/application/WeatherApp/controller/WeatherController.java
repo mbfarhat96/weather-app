@@ -1,14 +1,11 @@
 package com.weatherapp.application.WeatherApp.controller;
 
-
-import com.weatherapp.application.WeatherApp.model.WeatherResponse;
 import com.weatherapp.application.WeatherApp.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.http.ResponseEntity;
+
 
 import java.util.Map;
 
