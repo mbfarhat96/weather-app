@@ -1,7 +1,9 @@
 package com.weatherapp.application.WeatherApp.controller;
 
 
+import com.weatherapp.application.WeatherApp.model.ShortWeatherResponse;
 import com.weatherapp.application.WeatherApp.model.WeatherResponse;
+import com.weatherapp.application.WeatherApp.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,17 +13,17 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class WeatherController {
-    private final String API_URL = "http://api.weatherstack.com/current?access_key={key}&query={city}";
-    private final String API_KEY = "030f86f222b003ec84a60d5a2901b1c5";
-
 
     @Autowired
     public RestTemplate restTemplate;
 
+    //Get Method
+    //@GetMapping("/weather")  <--- This maps our getWeather() method to HTTP GET requests.
+    //This is also an endpoint for our GET method.
     @GetMapping("/weather")
-    public WeatherResponse getMapping(@RequestParam String city){
-        String url = API_URL.replace("{key}",API_KEY).replace("{city}",city);
-        ResponseEntity<WeatherResponse> response = restTemplate.getForEntity(url, WeatherResponse.class);
-        return response.getBody();
+    public WeatherResponse getWeather(@RequestParam String city){
+        WeatherService service =  new WeatherService();
+        WeatherResponse response = service.getWeather(city);
+        return response;
     }
 }
