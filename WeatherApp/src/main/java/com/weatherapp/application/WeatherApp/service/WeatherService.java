@@ -1,7 +1,6 @@
 package com.weatherapp.application.WeatherApp.service;
 
 import com.weatherapp.application.WeatherApp.model.WeatherResponse;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
