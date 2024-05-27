@@ -1,0 +1,11 @@
+com\weatherapp\application\WeatherApp\model\ShortWeatherResponse$Request.class
+com\weatherapp\application\WeatherApp\model\ShortWeatherResponse.class
+com\weatherapp\application\WeatherApp\controller\WeatherController.class
+com\weatherapp\application\WeatherApp\model\WeatherResponse$Location.class
+com\weatherapp\application\WeatherApp\AppConfig.class
+com\weatherapp\application\WeatherApp\service\WeatherService.class
+com\weatherapp\application\WeatherApp\model\WeatherResponse$Current.class
+com\weatherapp\application\WeatherApp\model\WeatherResponse.class
+com\weatherapp\application\WeatherApp\model\ShortWeatherResponse$Current.class
+com\weatherapp\application\WeatherApp\model\WeatherResponse$Request.class
+com\weatherapp\application\WeatherApp\WeatherAppApplication.class
